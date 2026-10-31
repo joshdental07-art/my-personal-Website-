@@ -1,300 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NBG Footies | Quality Footwear</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBG Footies | Quality Footwear</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.6;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background: #080808;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
 
-    header h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
-    }
+header h1 {
+  color: #d4af37;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
 
-    header p {
-      color: #ddd;
-    }
+header p {
+  margin-top: 8px;
+  color: #eee;
+}
 
-    .hero {
-      background: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
+nav {
+  background: #d4af37;
+  text-align: center;
+  padding: 12px;
+}
 
-    .hero h2 {
-      font-size: 34px;
-      margin-bottom: 12px;
-    }
+nav a {
+  color: #080808;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 12px;
+}
 
-    .hero p {
-      max-width: 650px;
-      margin: auto;
-      color: #555;
-      font-size: 17px;
-    }
+.hero {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
 
-    .whatsapp {
-      display: inline-block;
-      margin-top: 22px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      padding: 14px 25px;
-      border-radius: 30px;
-      font-weight: bold;
-    }
+.hero h2 {
+  color: #d4af37;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
 
-    .products {
-      padding: 35px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+.hero p {
+  max-width: 550px;
+  margin: auto;
+}
 
-    .products h2 {
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 28px;
-    }
+.section {
+  padding: 40px 15px;
+  text-align: center;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.section h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
 
-    .card {
-      background: white;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
+.gold {
+  color: #b18b20;
+}
 
-    .card img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      display: block;
-    }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 30px auto;
+}
 
-    .card-content {
-      padding: 16px;
-      text-align: center;
-    }
+.product {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
 
-    .card h3 {
-      margin-bottom: 7px;
-    }
+.product img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
 
-    .card p {
-      color: #666;
-      margin-bottom: 12px;
-    }
+.product h3 {
+  margin: 15px 5px 5px;
+}
 
-    .order {
-      display: inline-block;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 25px;
-      font-size: 14px;
-    }
+.product p {
+  padding: 0 10px;
+}
 
-    .info {
-      background: #111;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+.order {
+  display: inline-block;
+  background: #168b45;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 12px;
+}
 
-    .info h2 {
-      margin-bottom: 15px;
-    }
+.about {
+  background: #111;
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+}
 
-    .info p {
-      margin: 8px 0;
-    }
+.about h2 {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
 
-    footer {
-      background: #000;
-      color: #aaa;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+.about p {
+  max-width: 650px;
+  margin: auto;
+}
+
+.contact {
+  text-align: center;
+  padding: 45px 15px;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact p {
+  margin: 8px;
+}
+
+footer {
+  background: #080808;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer span {
+  color: #d4af37;
+}
+
+@media(max-width: 500px) {
+  header h1 {
+    font-size: 29px;
+  }
+  .hero h2 {
+    font-size: 26px;
+  }
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>NBG FOOTIES</h1>
-  <p>Quality Footwear • Great Style • Nationwide Delivery</p>
+  <p>Step Out in Style. Walk with Confidence.</p>
 </header>
 
-<section class="hero">
-  <h2>Step Into Quality & Style</h2>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <p>
-    Discover our collection of stylish footwear. All different sizes are available.
-    Prices vary depending on the product you choose.
-  </p>
-
-  <a class="whatsapp"
-     href="https://wa.me/2349032524626"
-     target="_blank">
-    Order on WhatsApp
-  </a>
+<section class="hero" id="home">
+  <h2>QUALITY FOOTWEAR</h2>
+  <p>Discover stylish, original and quality footwear at NBG Footies. Great footwear for every step and every occasion.</p>
+  <a class="order" href="#products">Explore Our Collection</a>
 </section>
 
-<section class="products">
-  <h2>Our Products</h2>
+<section class="section" id="products">
+  <h2>Our <span class="gold">Collection</span></h2>
+  <p>Quality footwear at affordable prices.</p>
 
-  <div class="grid">
+  <div class="products">
 
-    <div class="card">
-      <img src="IMG-20261024-WA0000.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Different sizes available</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0000.jpg" alt="Quality footwear">
+      <h3>Quality Footwear</h3>
+      <p>Stylish footwear for everyday comfort.</p>
+      <a class="order" href="https://wa.me/2349032524626?text=Hello%20NBG%20Footies%2C%20I%20am%20interested%20in%20this%20product.">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0001.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Prices vary by product</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0001.jpg" alt="Quality shoes">
+      <h3>Original Shoes</h3>
+      <p>Quality shoes for your style.</p>
+      <a class="order" href="https://wa.me/2349032524626?text=Hello%20NBG%20Footies%2C%20I%20want%20to%20order%20shoes.">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0002.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Different sizes available</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0002.jpg" alt="Carton slippers">
+      <h3>Carton Slippers</h3>
+      <p>Comfortable and stylish slippers.</p>
+      <a class="order" href="https://wa.me/2349032524626?text=Hello%20NBG%20Footies%2C%20I%20want%20to%20order%20slippers.">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0003.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Different sizes available</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0003.jpg" alt="Black Timberland shoes">
+      <h3>Black Timberland</h3>
+      <p>Bold style with a classic look.</p>
+      <a class="order" href="https://wa.me/2349032524626?text=Hello%20NBG%20Footies%2C%20I%20want%20Timberland%20shoes.">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0004.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Quality footwear</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0004.jpg" alt="Footwear collection">
+      <h3>Quality Collection</h3>
+      <p>Find your perfect footwear.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0005.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Available in different sizes</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0005.jpg" alt="Footwear collection">
+      <h3>Stylish Footwear</h3>
+      <p>Style and comfort in every step.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0006.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Quality footwear</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0006.jpg" alt="Footwear collection">
+      <h3>Premium Footwear</h3>
+      <p>Quality products for every occasion.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0007.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Different sizes available</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0007.jpg" alt="Footwear collection">
+      <h3>Fashion Collection</h3>
+      <p>Upgrade your everyday style.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0008.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Quality footwear</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0008.jpg" alt="Footwear collection">
+      <h3>Quality Shoes</h3>
+      <p>Choose your favourite pair.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0009.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Footwear Collection</h3>
-        <p>Different sizes available</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0009.jpg" alt="Footwear collection">
+      <h3>Latest Collection</h3>
+      <p>Great footwear for your wardrobe.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
-    <div class="card">
-      <img src="IMG-20261024-WA0010.jpg" alt="NBG Footies product">
-      <div class="card-content">
-        <h3>Black Timberland Style</h3>
-        <p>Available in different sizes</p>
-        <a class="order" href="https://wa.me/2349032524626" target="_blank">Order Now</a>
-      </div>
+    <div class="product">
+      <img src="IMG-20261024-WA0010.jpg" alt="Footwear collection">
+      <h3>More Quality Styles</h3>
+      <p>Get in touch to see available sizes.</p>
+      <a class="order" href="https://wa.me/2349032524626">Order on WhatsApp</a>
     </div>
 
   </div>
 </section>
 
-<section class="info">
-  <h2>How To Order</h2>
-
-  <p>📸 Screenshot the product you want.</p>
-  <p>📲 Send the screenshot to us on WhatsApp.</p>
-  <p>💰 We will confirm the price and available size.</p>
-  <p>🚚 Nationwide delivery available.</p>
-
-  <a class="whatsapp"
-     href="https://wa.me/2349032524626"
-     target="_blank">
-    Chat With Us on WhatsApp
-  </a>
-
-  <p style="margin-top:20px;">
-    📍 Onitsha, Anambra State, Nigeria
+<section class="about" id="about">
+  <h2>About NBG Footies</h2>
+  <p>
+    Welcome to NBG Footies, your trusted destination for quality footwear.
+    We offer original shoes, stylish carton slippers and black Timberland shoes.
+    All sizes are available, and prices vary depending on your preferred item.
+    Our goal is to give every customer quality products and excellent service.
   </p>
 </section>
 
+<section class="contact" id="contact">
+  <h2>Let's Do <span class="gold">Business!</span></h2>
+  <p><strong>Location:</strong> Onitsha, Anambra State, Nigeria</p>
+  <p><strong>Delivery:</strong> Nationwide delivery available</p>
+  <p><strong>WhatsApp:</strong> +234 903 252 4626</p>
+  <p>Screenshot and send us a picture of what you want. Let's talk business!</p>
+  <a class="order" href="https://wa.me/2349032524626">Chat With Us on WhatsApp</a>
+</section>
+
 <footer>
-  © 2026 NBG Footies. All rights reserved.
+  <p>© 2026 <span>NBG FOOTIES</span>. All Rights Reserved.</p>
+  <p>Quality Footwear. Quality Service.</p>
 </footer>
 
 </body>
